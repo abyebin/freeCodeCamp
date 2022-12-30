@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="title_div">
+            <h1 id="title">FreeCodeCamp Survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <form action="/" id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Full Name</label>
+                <input class="input" type="text" id="name" required placeholder="Enter Your Name:...">
+            </fieldset>
+            <fieldset>
+                <label id="email-label" for="email">Email ID</label>
+                <input class="input" type="email" id="email" required placeholder="Enter Your email">
+            </fieldset>
+            <fieldset>
+                <label id="number-label" for="number">Age</label>
+                <input class="input" max="65" min="15" type="number" id="number" placeholder="Enter Your Age:...">
+            </fieldset>
+            <fieldset>
+                <label id="number-label" for="dropdown">Education</label>
+                <select id="dropdown" >
+                    <option value="">Select Education</option>
+                    <option value="0">Graduated</option>
+                    <option value="1">High School</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <h4>Would you recommend freeCodeCamp to a friend?</h2><br>
+                <label id="radio-label" for="radio">
+                    <input value="yes" type="radio" id="radio" name="radio" checked>Yes
+                </label>
+                <label id="radio-label" for="radio">
+                    <input value="no" type="radio" id="radio" name="radio" >No
+                </label>
+            </fieldset>
+            
+            <fieldset >
+                <h4 >What would you like to see improved?</h4>
+                <label for="checkbox">
+                <input value="01" type="checkbox" id="checkbox" name="checkbox" >Front-end Projects <br>
+                <input value="02" type="checkbox" id="checkbox" name="checkbox" >Back-end Projects <br>
+                <input value="03" type="checkbox" id="checkbox" name="checkbox" >Challenges <br>
+            </label>
+            </fieldset>
+            <fieldset>
+                <label for="comment"> Write us! <br>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </label>
+            </fieldset>
+            <input id="submit" type="Submit">
+        </form>
+
+
+    </div>
+</body>
+</html>
