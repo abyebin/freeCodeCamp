@@ -1,0 +1,76 @@
+:root{
+
+}
+*,::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid orangered; */
+}
+main{
+    background-image: url(https://images.pexels.com/photos/1144686/pexels-photo-1144686.jpeg?cs=srgb&dl=pexels-matheus-bertelli-1144686.jpg&fm=jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+#header{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+#header-img{
+    height: 50px;
+    margin: 10px 30px;
+}
+#nav-bar{
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-around
+}
+.nav-link{
+    font-size: 1.5rem;
+    color: rgb(131, 36, 7);
+}
+.nav-link:hover{
+    color: rgb(196, 98, 8);
+}
+.seperator{
+    padding-top: 75px;
+}
+section{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.body-icon{
+    color: rgb(228, 73, 2);
+    font-size: 2rem;
+    padding: 20px;
+}
+h2{
+    color: rgb(247, 148, 56);
+}
+.body-img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+p::first-letter{
+    font-size: 3rem;
+    float: left;
+    margin-right: 0.5rem ;
+    color: rgb(120, 120, 253);
+}
